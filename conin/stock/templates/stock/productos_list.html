@@ -1,0 +1,31 @@
+
+
+{% block header %}
+<h4>Conin Imagen</h4>
+        <ul><h4>
+            <li><a href="productos_list.html">Deposito</a></li>
+            
+             <li><a href="productos_delete.html">CheckOut</a></li>
+
+             <li><a href="productos_add.html">Agregar</a></li>
+         </h4></ul>
+{% endblock %}
+
+
+
+{% block content %}
+<tbody>
+            <tr>
+                {% for producto in productos %}
+                <td>- id: {{producto.id_prod}}</td><br>
+                <td>- producto: {{producto.producto}}</td><br>
+                <td>- cantidad: {{producto.cantidad}}</td><br><br>
+                {% endfor %}
+            </tr>
+</tbody>
+{% endblock %}
+
+
+{% block footer %}
+<br><br><br>Analisis 2° año  2021</h10>
+{% endblock %}

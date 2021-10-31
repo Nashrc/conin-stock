@@ -1,0 +1,25 @@
+
+{% block header %}
+<h4>Conin Imagen</h4>
+        <ul><h4>
+            <li><a href="productos_list.html">Deposito</a></li>
+            
+             <li><a href="productos_delete.html">CheckOut</a></li>
+
+             <li><a href="productos_add.html">Agregar</a></li>
+         </h4></ul>
+{% endblock %}
+
+
+{% block content %}
+<h4>Agregar Producto</h4>
+<form method="post">
+      {% csrf_token %}
+      {{form.as_p}}
+<button type="submit" >Agregar Producto</button>
+{% endblock %}
+
+
+{% block footer %}
+<br><br><br>Analisis 2° año  2021</h10>
+{% endblock %}

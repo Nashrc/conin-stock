@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Conin - Stock{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}"> 
+
+</head>
+
+<body>
+{% block header %}
+<h4>Conin Imagen</h4>
+        <ul><h4>
+            <li><a href="productos_list.html">Deposito</a></li>
+            
+             <li><a href="productos_delete.html">CheckOut</a></li>
+
+             <li><a href="productos_add.html">Agregar</a></li>
+         </h4></ul>
+{% endblock %}
+
+
+
+{% block content %}
+Contenido de la pagina va aca
+{% endblock %}
+
+
+
+
+{% block footer %}
+<br><br><br>Analisis 2° año  2021</h10>
+{% endblock %}
+
+</body>	
+</html>
